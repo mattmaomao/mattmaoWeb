@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- icon on tab -->
-    <link rel="shortcut icon" href="img/cat girl.jpg" />
+    <link rel="shortcut icon" href="/img/cat girl.jpg" />
 
     <!-- title display on tab -->
     <title>My website</title>
@@ -47,7 +47,7 @@
       </button>
     </div>
 
-    <div style="display: flex; flex-direction: column;">
+    <div class="row-container">
       <!-- header -->
       <div class="header">header ~put image here~</div>
 
@@ -64,24 +64,25 @@
           <button class="nav-item button" onclick="find('/html/things.html')">
             things
           </button>
-          <button class="nav-item button" onclick="find('/html/about.html')">
+          <button class="nav-item button" onclick="find('/index.html')">
             about
           </button>
           <button class="nav-item button" onclick="find('/html/help.html')">
             help
           </button>
-          <button class="nav-item button" onclick="find('/html/???.html')">
-            ???
-          </button>
+          <a
+            class="nav-item"
+            href="/html/debug.html"
+            style="display: flex; text-decoration: none"
+            ><button class="nav-item button">debug</button></a
+          >
         </div>
       </div>
 
-      <p>content</p>
+      <!-- iframe content -->
+      <!-- <p>content</p> -->
       <div class="content-container">
-        <iframe
-          id="content-item"
-          src="/index.html"
-          style="flex-grow: 1"></iframe>
+        <iframe class="content-item" id="content-item" src="/html/things.html"></iframe>
       </div>
 
       <!-- footer -->

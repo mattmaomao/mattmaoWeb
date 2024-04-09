@@ -11,11 +11,11 @@ jobs:
       - name: read var
         run: echo "api is ${{secrets.REACT_APP_FB_API}}"
 
-      - name: Install dependencies
-        run: npm install
+      #- name: Install dependencies
+       # run: npm install
 
       - name: Build and deploy
         run: echo "REACT_APP_FB_API=${{ secrets.REACT_APP_FB_API }}" > .env
-          npm run build
+          npm run deploy
           # Deploy build output to GitHub Pages
           # Your deployment command goes here

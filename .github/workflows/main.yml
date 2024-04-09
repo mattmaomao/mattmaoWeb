@@ -16,7 +16,7 @@ jobs:
 
       - name: upload artifact
         run: actions/upload-pages-artifact@v3
-        run: echo ::group::Archive artifact
+          echo ::group::Archive artifact
 
       - name: report build status
         run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \

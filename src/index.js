@@ -23,6 +23,14 @@ const firebaseConfig = {
   measurementId: "G-KE711Q1XTD",
 };
 
+console.log(process.env.REACT_APP_FB_API);
+console.log(process.env.REACT_APP_FB_authDomain);
+console.log(process.env.REACT_APP_FB_projectId);
+console.log(process.env.REACT_APP_FB_storageBucket);
+console.log(process.env.REACT_APP_FB_messagingSenderId);
+console.log(process.env.REACT_APP_FB_appId);
+console.log(process.env.REACT_APP_FB_measurementId);
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);

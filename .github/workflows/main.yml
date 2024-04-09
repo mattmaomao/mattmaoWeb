@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages 
+
+on:
+  workflow_dispatch
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: read var
+        run: echo "api is ${{secrets.REACT_APP_FB_API}}"
+
+      #- name: Install dependencies
+       # run: npm install
+
+      - name: Build and deploy
+        run: echo "REACT_APP_FB_API=${{ secrets.REACT_APP_FB_API }}" > .env
+          npm run deploy
+          # Deploy build output to GitHub Pages
+          # Your deployment command goes here

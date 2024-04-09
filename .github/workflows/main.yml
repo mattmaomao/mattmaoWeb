@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: checkout
-        run: actions/checkout@v2
+        run: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -18,10 +18,10 @@ jobs:
 
       - name: fetch secrets
         run: |
-          echo "REACT_APP_FB_API=${{ secrets.REACT_APP_FB_API }}" > .env
-          echo "REACT_APP_FB_MESSAGINGSENDERID=${{ secrets.REACT_APP_FB_MESSAGINGSENDERID }}" > .env
-          echo "REACT_APP_FB_APPID=${{ secrets.REACT_APP_FB_APPID }}" > .env
-          echo "REACT_APP_FB_MEASUREMENTID=${{ secrets.REACT_APP_FB_MEASUREMENTID }}" > .env
+          echo "API=${{ secrets.REACT_APP_FB_API }}" > .env
+          echo "MESSAGINGSENDERID=${{ secrets.REACT_APP_FB_MESSAGINGSENDERID }}" > .env
+          echo "APPID=${{ secrets.REACT_APP_FB_APPID }}" > .env
+          echo "MEASUREMENTID=${{ secrets.REACT_APP_FB_MEASUREMENTID }}" > .env
 
       - name: build
         run: npm run build

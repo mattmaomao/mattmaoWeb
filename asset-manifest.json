@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/mattmaoWeb/static/css/main.7f5a7f16.css",
-    "main.js": "/mattmaoWeb/static/js/main.feda4ccd.js",
+    "main.css": "/mattmaoWeb/static/css/main.4665ddf4.css",
+    "main.js": "/mattmaoWeb/static/js/main.93943749.js",
     "static/js/453.a0345f9e.chunk.js": "/mattmaoWeb/static/js/453.a0345f9e.chunk.js",
+    "static/media/refresh.svg": "/mattmaoWeb/static/media/refresh.8b37b1430d04436cabb03124aa745751.svg",
     "index.html": "/mattmaoWeb/index.html",
-    "main.7f5a7f16.css.map": "/mattmaoWeb/static/css/main.7f5a7f16.css.map",
-    "main.feda4ccd.js.map": "/mattmaoWeb/static/js/main.feda4ccd.js.map",
+    "main.4665ddf4.css.map": "/mattmaoWeb/static/css/main.4665ddf4.css.map",
+    "main.93943749.js.map": "/mattmaoWeb/static/js/main.93943749.js.map",
     "453.a0345f9e.chunk.js.map": "/mattmaoWeb/static/js/453.a0345f9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f5a7f16.css",
-    "static/js/main.feda4ccd.js"
+    "static/css/main.4665ddf4.css",
+    "static/js/main.93943749.js"
   ]
 }
